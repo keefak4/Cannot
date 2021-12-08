@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - PostCamera
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Water
+    uniqueID: 2793211635
+    locked: 0
+  - name: Metro
+    uniqueID: 1517212719
+    locked: 0
+  - name: NPS
+    uniqueID: 1118666477
+    locked: 0
+  - name: Player
+    uniqueID: 3754619899
+    locked: 0
+  - name: PartWaterClap
+    uniqueID: 440766231
+    locked: 0
+  - name: Line
+    uniqueID: 1684802307
+    locked: 0
