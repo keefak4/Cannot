@@ -47,6 +47,9 @@ TagManager:
   - name: Metro
     uniqueID: 1517212719
     locked: 0
+  - name: BG
+    uniqueID: 1857789619
+    locked: 0
   - name: NPS
     uniqueID: 1118666477
     locked: 0

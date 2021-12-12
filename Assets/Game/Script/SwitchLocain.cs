@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class SwitchLocain : MonoBehaviour
 {
-    [SerializeField] private GameObject Scene;
+    [SerializeField] private GameObject SceneBeta;
+    [SerializeField] private GameObject SceneTera;
+    [SerializeField] private GameObject SceneActive;
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            Scene.SetActive(true);
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Scene.SetActive(false);
-        }
+        SceneActive.SetActive(true);
+        SceneBeta.SetActive(false);
+        SceneTera.SetActive(false);
     }
 }
