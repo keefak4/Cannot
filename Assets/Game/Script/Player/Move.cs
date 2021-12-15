@@ -10,6 +10,7 @@ public class Move : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     [SerializeField] private GameObject sigareta;
+    [SerializeField] private float coolSigaret = 1f;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,10 +30,10 @@ public class Move : MonoBehaviour
     }
     private void SigarLogic()
     {
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && coolSigaret > 0)
         {
+            coolSigaret--;
             speed = 0;
-            sigareta.gameObject.SetActive(true);
             anim.SetTrigger("Sigar");
             Invoke("NormalIdle", 2.05f);
 
@@ -41,6 +42,6 @@ public class Move : MonoBehaviour
     private void NormalIdle()
     {
         speed = 4;
-        sigareta.gameObject.SetActive(false);
+        
     }
 }

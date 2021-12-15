@@ -10,6 +10,7 @@ public class DialogyManager : MonoBehaviour
     [SerializeField] private Text nameText;
     [SerializeField] private Text dialogText;
     [SerializeField] private GameObject endObject;
+    private BoxCollider2D boxCollider2;
 
     private Queue<string> sentences;
     private void Start()
@@ -52,6 +53,5 @@ public class DialogyManager : MonoBehaviour
     {
         Debug.Log("End");
         endObject.SetActive(false);
-
     }
 }
