@@ -18,6 +18,7 @@ public class MoveVecAndHor : MonoBehaviour
     {
         MoveLogic();
         ShiftSpeed();
+        BreakoutLogic();
     }
     private void FixedUpdate()
     {
@@ -38,6 +39,21 @@ public class MoveVecAndHor : MonoBehaviour
         else
         {
             speedNormal = 2f;
+        }
+    }
+    private void BreakoutLogic()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            if(spriteRend.flipX == true)
+            {
+                rb.AddForce(-transform.right * 5000f);
+            }
+            else
+            {
+                rb.AddForce(transform.right * 5000f);
+
+            }
         }
     }
 }
